@@ -8,13 +8,13 @@ Universal stylesheet for PlantUML
 - replace {PATH_TO_design.puml} with the path to the design.puml file
 
 example:
-<code>
+
     @startuml
+
     !include style/design.puml
 
     Title My Activity diagram
     -- Rest of the PlantUML code --
-</code>
 
 ## Use as remote content
 Instead of downloading the stylesheet and using a local copy, you can use a remote copy. This can be done by including the following line in your PlantUML code:
