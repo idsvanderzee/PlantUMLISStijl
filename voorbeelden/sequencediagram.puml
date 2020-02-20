@@ -1,14 +1,14 @@
 @startuml
-!includeurl ../localindex.puml
+!includeurl ../design.puml
 
 Title Sequence diagram
-actor actor1 as a1 
-participant participant1 as p1
-participant participant2 as p2 
+actor Actor1 as a1 
+participant Participant1 as p1
+participant Participant2 as p2 
 
-request(a1, p2, request 1)
-return(p2, a1, return message for request 1)
-request(a1, p1, request 2)
-self(p1, validate request 2)
+a1 -> p1: Request 1
+a1 <-- p1: Return message for request 1
+a1 -> p2: Request 2
+p2 -> p2: Validate request 2
 
 @enduml

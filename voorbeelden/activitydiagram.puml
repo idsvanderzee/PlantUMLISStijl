@@ -4,19 +4,19 @@
 Title Activity diagram
 
 start
-:Actie 1;
+:Action 1;
 
-:Actie 2;
+:Action 2;
 
-:Actie 3;
+:Action 3;
 
-if (Statement) then (ja)
-    :Ja actie;
-else (nee)
-    :Nee actie;
+if (Statement) then (yes)
+    :Yes Action;
+else (no)
+    :No Action;
 endif
 
-:Actie 4;
+:Action 4;
 
 stop
 @enduml
