@@ -1,5 +1,5 @@
 @startuml
-!includeurl https://raw.githubusercontent.com/luudvkeulen/PlantUMLISStijl/master/remoteindex.puml
+!includeurl ../localindex.puml
 
 Title Sequence diagram
 actor actor1 as a1 

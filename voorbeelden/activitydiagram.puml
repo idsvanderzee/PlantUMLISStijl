@@ -1,5 +1,5 @@
 @startuml
-!includeurl https://raw.githubusercontent.com/luudvkeulen/PlantUMLISStijl/master/design.puml
+!includeurl ../design.puml
 
 Title Activity diagram
 

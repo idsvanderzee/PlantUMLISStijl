@@ -1,5 +1,6 @@
-!define isprimary #0094D8
-!define issecondary #02315A
+!define isprimary #43ADB0
+!define issecondary #075D5F
+!define background #C9E4E5
 
 hide footbox
 
@@ -10,25 +11,25 @@ skinparam {
     defaultFontColor issecondary
     ArrowColor issecondary
     ActorBorderColor isprimary
-    ActorBackgroundColor white
+    ActorBackgroundColor background
     titleBorderThickness 2
     titleBorderColor issecondary
-    stereotypeCBackgroundColor isprimary
+    stereotypeCBackgroundColor background
     stereotypeCBorderColor issecondary
 
     sequence {
         LifeLineBorderColor issecondary
 
         ParticipantBorderColor isprimary
-        ParticipantBackgroundColor white
+        ParticipantBackgroundColor background
 
         GroupBorderColor isprimary
-        GroupBackgroundColor isprimary
+        GroupBackgroundColor background
         GroupHeaderFontColor white
     }
 
     usecase {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 
@@ -36,37 +37,37 @@ skinparam {
         StartColor issecondary
 
         BorderColor isprimary
-        BackgroundColor white
+        BackgroundColor background
 
         DiamondBorderColor isprimary
-        DiamondBackgroundColor white
+        DiamondBackgroundColor background
 
         EndColor issecondary
         EndBorderColor issecondary
     }
 
     class {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary        
     }
 
     package {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 
     cloud {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
     
     database {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 
     node {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 
@@ -76,24 +77,24 @@ skinparam {
     }
 
     component {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 
     interface {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 
     state {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
         StartColor issecondary
         EndColor issecondary
     }
 
     queue {
-        BackgroundColor white
+        BackgroundColor background
         BorderColor isprimary
     }
 }
