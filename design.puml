@@ -52,7 +52,7 @@ skinparam {
     }
 
     package {
-        BackgroundColor background
+        BackgroundColor white
         BorderColor isprimary
     }
 
@@ -67,7 +67,7 @@ skinparam {
     }
 
     node {
-        BackgroundColor background
+        BackgroundColor white
         BorderColor isprimary
     }
 
