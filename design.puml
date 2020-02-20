@@ -67,7 +67,7 @@ skinparam {
     }
 
     node {
-        BackgroundColor white
+        BackgroundColor #D9F7F8
         BorderColor isprimary
     }
 
