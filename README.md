@@ -18,6 +18,7 @@ example:
 
 ## Use as remote content
 Instead of downloading the stylesheet and using a local copy, you can use a remote copy. This can be done by including the following line in your PlantUML code:
+
 `!includeurl https://raw.githubusercontent.com/idsvanderzee/PlantUMLISStijl/master/design.puml`
 
 # Overriding styles
