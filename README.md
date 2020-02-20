@@ -1,48 +1,30 @@
-# PlantUML Info Support Stijl
-Plant UML Info Support Stijl voor PlantUML Diagrammen. 
+# PlantUML Stylesheet
+Universal stylesheet for PlantUML
 
-# Gebruikershandleiding
-Dit design is op twee manier te gebruiken. Het is mogelijk om een lokale kopie te gebruiken of een url aan te spreken.
+# How to use it
+## Use a local copy
+- Download the design.puml
+- In your PlantUML code include the following `!include {PATH_TO_design.puml}`
+- replace {PATH_TO_design.puml} with the path to the design.puml file
 
-## Lokale kopie
-Om een lokale kopie te gebruiken moet allereerst het design.puml bestand gedownload worden. Vervolgens is het handig als dit bestand in dezelfde folder komt te staan als de rest van je PlantUML diagrammen. Vervolgens kan het design gebruikt worden door `!include design.puml` aan het begin van het bestand te zetten. Hieronder een voorbeeld:
-```
-@startuml
-!include design.puml
-// Rest van de code
-@enduml
-```
+example:
+<code>
+    @startuml
+    !include style/design.puml
 
-## Via een url
-Om via een url te werken kan `!includeurl` gebruikt worden. Als er met een url gewerkt wordt heb je altijd de laatste versie. Hieronder een voorbeeld:
-```
-@startuml
-#Design:
-!includeurl https://raw.githubusercontent.com/luudvkeulen/PlantUMLISStijl/master/design.puml
-#Methods:
-https://raw.githubusercontent.com/luudvkeulen/PlantUMLISStijl/master/methods.puml
-#Beide:
-https://raw.githubusercontent.com/luudvkeulen/PlantUMLISStijl/master/remoteindex.puml
-// Rest van de code
-@enduml
-```
+    Title My Activity diagram
+    -- Rest of the PlantUML code --
+</code>
 
-## Methodes
-Naast dit design wordt ook een verzameling handige methoden aangeboden, deze methoden helpen een beter overzicht te houden. Deze methoden zijn te gebruiken door methods.puml te gebruiken, deze kan op de zelfde manier toegevoegd worden aan een project als het design.puml bestand: `!include methods.puml`.
+## Use as remote content
+Instead of downloading the stylesheet and using a local copy, you can use a remote copy. This can be done by including the following line in your PlantUML code:
+`!includeurl https://raw.githubusercontent.com/idsvanderzee/PlantUMLISStijl/master/design.puml`
 
-Door het gebruik van deze methoden kan bijvoorbeeld voor een sequence diagram de acties op de volgende manier aangemaakt worden.
+# Overriding styles
+All the styling included in the stylesheet can be easily overridden by including other styling in your in PlantUML code.
 
-```
-request(service1, service2, description)
-return(service2, service1, description)
-self(service1, description)
-```
-De methode `request()` kent 3 argumenten, als eerst een participant of actor welke verantwoordelijk is voor het request. Als tweede een participant of actor waarnaar het verzoek gedaan wordt. Tot slot een bescrijving van het verzoek. Hiermee wordt een vaste pijl getekend van de participant of actor meegegeven als eerste argument naar de participant of actor meegegeven als tweede argument. De `return()` methode werkt op de zelfde manier maar tekent een gestreepte pijl wat aantoont dat het om een return waarde gaat. De `self()` methode tekend een pijl van de participant of actor meegegeven als eerste argument naar zichzelf.
-
-Indien het design en de methoden beide nodig zijn kunnen deze beide toegevoegd worden aan een diagram door `!include localindex.puml` bovenaan het diagram toe te voegen.
-
-# Voorbeelden
+# Examples
 ### Activity diagram
-![alt text](https://github.com/luudvkeulen/PlantUMLISStijl/raw/master/voorbeelden/activitydiagram.png "Activity diagram")
+![alt text](./examples/activitydiagram.png "Activity diagram")
 ### Sequence diagram
-![alt text](https://github.com/luudvkeulen/PlantUMLISStijl/raw/master/voorbeelden/sequencediagram.png "Sequence diagram")
+![alt text](./examples/sequencediagram.png "Sequence diagram")
